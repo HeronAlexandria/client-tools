@@ -72,8 +72,6 @@ private:
 	int getExpertiseSkillModValue(const std::string & expertiseName, const std::string & skillModName);
 	int getExpertiseModifierForBuffComponent(const std::string & buffComponentName);
 
-	void onVerifyPromptClosed(const CuiMessageBox & box);
-
 	void addBuffToList();
 	void removeBuffFromList();
 
@@ -95,8 +93,6 @@ private:
 	UIText * m_recipientName;
 
 	bool m_committed;
-
-	static bool m_failedLastVerification;
 };
 
 // ======================================================================
